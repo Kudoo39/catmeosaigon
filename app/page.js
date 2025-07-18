@@ -51,7 +51,7 @@ export default function Home() {
             Cung cấp cát mèo chất lượng & thân thiện với môi trường
           </p>
           <a
-            href='#services'
+            href='#dich-vu'
             className='
         inline-block
         bg-gradient-to-r from-cyan-800 to-blue-800
@@ -106,7 +106,7 @@ export default function Home() {
           <div className='container mx-auto px-4 text-center mb-12'>
             <h2 className='text-4xl font-bold'>Dịch vụ</h2>
           </div>
-          <div className='container mx-auto px-4 grid gap-8 md:grid-cols-3'>
+          <div className='container mx-auto px-4 grid gap-8 md:grid-cols-2 lg:grid-cols-4'>
             {[
               {
                 title: 'Cát Mèo 30kg',
@@ -122,6 +122,11 @@ export default function Home() {
                 title: 'Giao Hàng Miễn Phí',
                 desc: 'Bán kính 2km - TP.HCM',
                 price: 'Miễn phí'
+              },
+              {
+                title: 'Giao Hàng Các Tỉnh',
+                desc: 'Vui lòng liên hệ để biết thêm chi tiết',
+                price: 'Thương lượng'
               }
             ].map((item) => (
               <div

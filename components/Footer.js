@@ -24,7 +24,7 @@ export default function Footer() {
               (svc) => (
                 <li key={svc}>
                   <a
-                    href='#services'
+                    href='#dich-vu'
                     className='text-cyan-100/80 hover:text-white transition'
                   >
                     {svc}
