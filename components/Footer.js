@@ -41,7 +41,7 @@ export default function Footer() {
           <ul className='space-y-2'>
             <li>
               <a
-                href='https://facebook.com/CatMeoSaiGon'
+                href='https://www.facebook.com/hoang.phi.696205'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='flex items-center text-cyan-100/80 hover:text-white transition'

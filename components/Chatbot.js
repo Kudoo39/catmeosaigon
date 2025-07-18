@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useRef } from 'react'
+import Image from 'next/image'
 
 export default function Chatbot({ isOpen, onToggle }) {
   const inputRef = useRef(null)
@@ -21,7 +22,15 @@ export default function Chatbot({ isOpen, onToggle }) {
           flex items-center justify-center text-2xl
         '
       >
-        💬
+        <div className='relative w-36 h-12 rounded-lg overflow-hidden'>
+          <Image
+            src='/chat.jpg'
+            alt='Cát Mèo Sài Gòn'
+            layout='fill'
+            objectFit='contain'
+            priority
+          />
+        </div>
       </button>
 
       {/* Chat Window */}

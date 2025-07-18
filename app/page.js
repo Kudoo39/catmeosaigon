@@ -40,20 +40,20 @@ export default function Home() {
         {/* Background image (opacity overlay) */}
         <div
           className='absolute inset-0 bg-cover bg-center opacity-30'
-          style={{ backgroundImage: "url('/hero-bg.jpg')" }}
+          style={{ backgroundImage: "url('/hero-back.jpg')" }}
         />
         <div className='relative z-10 text-center px-6'>
-          <h1 className='text-5xl md:text-6xl font-extrabold text-primary-dark mb-4'>
+          <h1 className='text-5xl md:text-7xl font-extrabold text-primary-dark mb-4'>
             Cát Mèo Sài Gòn
           </h1>
-          <p className='text-lg md:text-xl mb-8 text-primary-dark/90'>
+          <p className='text-lg md:text-2xl mb-8 text-primary-dark/90'>
             Cung cấp cát mèo chất lượng & thân thiện với môi trường
           </p>
           <a
             href='#services'
             className='
               inline-block
-              bg-primary-dark text-white
+              bg-primary-dark text-black
               px-8 py-3 rounded-full
               shadow-lg hover:shadow-2xl
               transition
@@ -69,7 +69,7 @@ export default function Home() {
         {/* Why Choose Us */}
         <section id='why' className='py-20 px-4 container mx-auto'>
           <h2 className='text-4xl font-bold text-center mb-8'>
-            Tại sao chọn Cát Mèo?
+            Tại sao chọn Cát Mèo Sài Gòn?
           </h2>
           <div className='grid gap-8 md:grid-cols-3'>
             {features.map(({ Icon, title, text }) => (
@@ -86,14 +86,11 @@ export default function Home() {
           </div>
         </section>
         {/* About */}
-        <section
-          id='about'
-          className='py-20 px-4 container mx-auto text-center'
-        >
+        <section id='about' className='py-20  text-center bg-gray-100'>
           <h2 className='text-4xl font-bold mb-6'>Chúng tôi</h2>
           <p className='max-w-2xl mx-auto text-gray-700 leading-relaxed'>
             Với hơn 5 năm kinh nghiệm, Cát Mèo Sài Gòn tự hào mang đến cát chất
-            lượng cao, hút ẩm nhanh, khử mùi hiệu quả. Giao hàng nhanh – hỗ trợ
+            lượng cao, hút ẩm nhanh, khử mùi hiệu quả. Giao hàng nhanh – Hỗ trợ
             24/7.
           </p>
         </section>
@@ -108,11 +105,11 @@ export default function Home() {
               {
                 title: 'Cát Mèo 30kg',
                 desc: 'Hút ẩm 5s, không bụi',
-                price: '135.000₫/kg'
+                price: '135.000₫/bao'
               },
               {
                 title: 'Chai Khử Mùi',
-                desc: 'Tinh dầu lavender tự nhiên 500ml',
+                desc: 'Khử mùi dạng hạt lavender / hạt cafe (1kg)',
                 price: '20.000₫/chai'
               },
               {

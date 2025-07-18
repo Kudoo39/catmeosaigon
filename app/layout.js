@@ -1,6 +1,12 @@
 import './globals.css'
 
-export const metadata = { title: 'Cát Mèo Sài Gòn' }
+export const metadata = {
+  title: 'Cát Mèo Sài Gòn',
+  icons: {
+    icon: '/icon.svg',
+    shortcut: '/icon.ico'
+  }
+}
 
 export default function RootLayout({ children }) {
   return (
