@@ -20,18 +20,21 @@ export default function Footer() {
         <div>
           <h4 className='text-cyan-200 font-semibold mb-4 text-lg'>Dịch vụ</h4>
           <ul className='space-y-2'>
-            {['Cát mèo 30kg', 'Chai khử mùi', 'Miễn phí ship 2km'].map(
-              (svc) => (
-                <li key={svc}>
-                  <a
-                    href='#dich-vu'
-                    className='text-cyan-100/80 hover:text-white transition'
-                  >
-                    {svc}
-                  </a>
-                </li>
-              )
-            )}
+            {[
+              'Cát mèo 30kg',
+              'Chai khử mùi',
+              'Miễn phí ship 2km',
+              'Giao hàng các tỉnh'
+            ].map((svc) => (
+              <li key={svc}>
+                <a
+                  href='#dich-vu'
+                  className='text-cyan-100/80 hover:text-white transition'
+                >
+                  {svc}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
 
