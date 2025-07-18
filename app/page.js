@@ -34,7 +34,7 @@ export default function Home() {
 
       {/* Hero */}
       <section
-        id='home'
+        id='trang-chinh'
         className='relative h-screen flex items-center justify-center bg-primary-light overflow-hidden'
       >
         {/* Background image (opacity overlay) */}
@@ -68,7 +68,7 @@ export default function Home() {
 
       <main className='flex-grow'>
         {/* Why Choose Us */}
-        <section id='why' className='py-20 px-4 container mx-auto'>
+        <section id='tai-sao' className='py-20 px-4 container mx-auto'>
           <h2 className='text-4xl font-bold text-center mb-8'>
             Tại sao chọn Cát Mèo Sài Gòn?
           </h2>
@@ -88,7 +88,7 @@ export default function Home() {
         </section>
         {/* About */}
         <section
-          id='about'
+          id='chung-toi'
           className='py-20 bg-gradient-to-r from-cyan-700/20 to-blue-900/20'
         >
           <h2 className='text-4xl font-bold mb-6 text-cyan-800 text-center'>
@@ -102,7 +102,7 @@ export default function Home() {
         </section>
 
         {/* Services */}
-        <section id='services' className='py-20 bg-white'>
+        <section id='dich-vu' className='py-20 bg-white'>
           <div className='container mx-auto px-4 text-center mb-12'>
             <h2 className='text-4xl font-bold'>Dịch vụ</h2>
           </div>
@@ -115,7 +115,7 @@ export default function Home() {
               },
               {
                 title: 'Chai Khử Mùi',
-                desc: 'Khử mùi dạng hạt lavender / hạt cafe (1kg)',
+                desc: 'Khử mùi dạng hạt lavender / hạt cafe (500g)',
                 price: '20.000₫/chai'
               },
               {
@@ -178,7 +178,7 @@ export default function Home() {
         </section>
 
         {/* Contact */}
-        <section id='contact' className='py-20 px-4 bg-primary-light'>
+        <section id='lien-he' className='py-20 px-4 bg-primary-light'>
           <div className='container mx-auto max-w-2xl'>
             <h2 className='text-4xl font-bold text-center mb-8'>Liên hệ</h2>
             <form className='space-y-6'>
