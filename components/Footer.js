@@ -94,7 +94,7 @@ export default function Footer() {
 
       {/* Copyright */}
       <div className='text-center text-cyan-100/70 mt-8 text-sm'>
-        © 2025 Cát Mèo Sài Gòn. All rights reserved.
+        © 2025 Cát Mèo Sài Gòn
       </div>
     </footer>
   )

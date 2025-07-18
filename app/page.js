@@ -42,23 +42,24 @@ export default function Home() {
           className='absolute inset-0 bg-cover bg-center opacity-30'
           style={{ backgroundImage: "url('/hero-back.jpg')" }}
         />
+
         <div className='relative z-10 text-center px-6'>
-          <h1 className='text-5xl md:text-7xl font-extrabold text-primary-dark mb-4'>
+          <h1 className='text-5xl md:text-7xl font-bold text-primary-dark mb-4 leading-tight'>
             Cát Mèo Sài Gòn
           </h1>
-          <p className='text-lg md:text-2xl mb-8 text-primary-dark/90'>
+          <p className='text-lg md:text-2xl mb-8 text-primary-dark/80 font-medium'>
             Cung cấp cát mèo chất lượng & thân thiện với môi trường
           </p>
           <a
             href='#services'
             className='
-              inline-block
-              bg-primary-dark text-black
-              px-8 py-3 rounded-full
-              shadow-lg hover:shadow-2xl
-              transition
-              transform hover:-translate-y-1
-            '
+        inline-block
+        bg-gradient-to-r from-cyan-800 to-blue-800
+        text-white font-medium
+        px-8 py-3 rounded-full
+        shadow-md hover:shadow-lg
+        transition transform hover:-translate-y-1
+      '
           >
             Khám phá dịch vụ
           </a>
@@ -86,9 +87,14 @@ export default function Home() {
           </div>
         </section>
         {/* About */}
-        <section id='about' className='py-20  text-center bg-gray-100'>
-          <h2 className='text-4xl font-bold mb-6'>Chúng tôi</h2>
-          <p className='max-w-2xl mx-auto text-gray-700 leading-relaxed'>
+        <section
+          id='about'
+          className='py-20 bg-gradient-to-r from-cyan-700/20 to-blue-900/20'
+        >
+          <h2 className='text-4xl font-bold mb-6 text-cyan-800 text-center'>
+            Chúng tôi
+          </h2>
+          <p className='max-w-2xl mx-auto text-cyan-900/90 leading-relaxed text-center px-4'>
             Với hơn 5 năm kinh nghiệm, Cát Mèo Sài Gòn tự hào mang đến cát chất
             lượng cao, hút ẩm nhanh, khử mùi hiệu quả. Giao hàng nhanh – Hỗ trợ
             24/7.
@@ -137,9 +143,12 @@ export default function Home() {
           </div>
         </section>
 
-        <section id='testimonials' className='py-20 bg-gray-100'>
+        <section
+          id='testimonials'
+          className='py-20 bg-gradient-to-r from-cyan-700/20 to-blue-900/20'
+        >
           <div className='container mx-auto px-4'>
-            <h2 className='text-4xl font-bold text-center mb-8'>
+            <h2 className='text-4xl font-bold text-center mb-8 text-cyan-800'>
               Khách hàng nói gì?
             </h2>
             <div className='space-y-8 max-w-2xl mx-auto'>
@@ -154,9 +163,14 @@ export default function Home() {
                   author: '— Trần Thị B, Sinh viên'
                 }
               ].map((t, i) => (
-                <blockquote key={i} className='p-6 bg-white rounded-xl shadow'>
-                  <p className='text-gray-700 mb-4'>{t.quote}</p>
-                  <footer className='text-sm text-gray-500'>{t.author}</footer>
+                <blockquote
+                  key={i}
+                  className='p-6 bg-white/80 rounded-xl shadow-sm'
+                >
+                  <p className='text-cyan-900/90 mb-4'>{t.quote}</p>
+                  <footer className='text-sm text-cyan-800/60'>
+                    {t.author}
+                  </footer>
                 </blockquote>
               ))}
             </div>
@@ -186,7 +200,7 @@ export default function Home() {
               <button
                 type='submit'
                 className='
-                  w-full bg-primary-dark text-black
+                  w-full  bg-gradient-to-r from-cyan-300 to-blue-300 text-black
                   py-3 rounded-full shadow-lg
                   hover:shadow-2xl transition
                   transform hover:-translate-y-1
